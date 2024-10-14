@@ -49,6 +49,6 @@ func main() {
 		panic("verification failed")
 	}
 
-	os.WriteFile("circuit.txt", c.Serialize(), 0o644)
-	os.WriteFile("witness.txt", witness.Serialize(), 0o644)
+	os.WriteFile("./fib/circuit.txt", c.Serialize(), 0o644)
+	os.WriteFile("./fib/witness.txt", witness.Serialize(), 0o644)
 }
